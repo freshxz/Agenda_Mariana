@@ -15,8 +15,6 @@ public class ContatoController {
         contatoDAO.open();
     }
 
-    //acoes do CRUD - Lembrar que SQL está no model
-    //create
     public long adicionarContato(String nome, String email, String telefone, String foto){
         Contato contato = new Contato(nome, email ,telefone, foto);
         return contatoDAO.adicionarContato(contato);

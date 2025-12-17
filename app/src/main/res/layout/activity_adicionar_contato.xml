@@ -8,11 +8,10 @@
     tools:context=".AdicionarContatoActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar2"
@@ -26,14 +25,19 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto do contato"
             tools:srcCompat="@tools:sample/avatars" />
 
         <Button
             android:id="@+id/btnSelecionarFoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selecionar" />
+            android:text="Selecionar Foto"
+            android:textColor="@android:color/white"
+            android:background="#F48FB1"
+            android:layout_margin="8dp" />
 
         <EditText
             android:id="@+id/editTextNome"
@@ -41,7 +45,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Nome"
-            android:inputType="text" />
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="12dp" />
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -49,7 +55,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="E-mail"
-            android:inputType="text" />
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="12dp" />
 
         <EditText
             android:id="@+id/editTextTelefone"
@@ -57,12 +65,18 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Telefone"
-            android:inputType="text" />
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="12dp" />
 
         <Button
             android:id="@+id/btnSalvar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salvar" />
+            android:text="Salvar"
+            android:textColor="@android:color/white"
+            android:background="#F48FB1"
+            android:layout_margin="8dp" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
